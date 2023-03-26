@@ -23,7 +23,7 @@ pipeline{
 		}
         stage('5-ops-check'){
             steps{
-                sh 'cat /etc/os/release'
+                sh 'cat /etc/os-release'
             }
         }
 	}
