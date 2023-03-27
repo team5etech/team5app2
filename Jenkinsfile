@@ -31,5 +31,10 @@ pipeline{
                 sh 'bash -x /var/lib/jenkins/workspace/team5-job-demo/script.sh'
             }
         }
+        stage('env-check'){
+            steps{
+        echo "This is ${env.BUILD_NUMBER} build"
+            }
+        }
 	}
 }
